@@ -11,7 +11,6 @@ Gamemode SAMP berbasis **Attack and Defend** dengan sistem pertempuran tim yang 
 - [Sistem Poin & Level](#sistem-poin--level)
 - [Instalasi](#instalasi)
 - [Kontrol & Commands](#kontrol--commands)
-- [Struktur File](#struktur-file)
 - [Configurasi](#configurasi)
 
 ---
@@ -219,38 +218,6 @@ Level 76-100:  Master
 
 ---
 
-## 📁 Struktur File
-
-```
-Gamemode-Tcw/
-├── README.md                 # Dokumentasi utama (file ini)
-├── fix.zip                   # Package gamemode lengkap
-│
-├── gamemodes/
-│   ├── tcw.pwn              # Main gamemode file
-│   ├── constants.inc         # Define dan konstanta
-│   └── config.cfg            # File konfigurasi
-│
-├── include/
-│   ├── player.inc            # Player data & functions
-│   ├── team.inc              # Team system
-│   ├── objective.inc         # Objective management
-│   ├── weapons.inc           # Weapon system
-│   └── utils.inc             # Utility functions
-│
-├── filterscripts/
-│   ├── spawn.fs              # Spawn management
-│   ├── teleport.fs           # Teleport commands
-│   └── admin.fs              # Admin commands
-│
-└── scriptfiles/
-    ├── accounts/             # Player data
-    ├── logs/                 # Server logs
-    └── config/               # Configuration files
-```
-
----
-
 ## ⚙️ Configurasi
 
 ### **File Config Utama: gamemode/config.cfg**
@@ -295,34 +262,6 @@ AllowC4=0
 NumObjectives=3
 ObjectiveDamagePerHit=25
 TimeToDestroyObjective=300    ; 5 menit
-```
-
-### **Struktur Database (Optional)**
-
-```sql
--- Player Stats Table
-CREATE TABLE player_stats (
-    id INT PRIMARY KEY,
-    name VARCHAR(24) UNIQUE,
-    level INT DEFAULT 1,
-    kills INT DEFAULT 0,
-    deaths INT DEFAULT 0,
-    assists INT DEFAULT 0,
-    wins INT DEFAULT 0,
-    losses INT DEFAULT 0,
-    cash BIGINT DEFAULT 0,
-    playtime INT DEFAULT 0,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Team Stats Table
-CREATE TABLE team_stats (
-    id INT PRIMARY KEY,
-    team_name VARCHAR(32),
-    wins INT DEFAULT 0,
-    losses INT DEFAULT 0,
-    avg_players INT DEFAULT 0
-);
 ```
 
 ---
