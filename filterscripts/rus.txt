@@ -1,0 +1,6 @@
+C:\Users\mr.17\Documents\tcw project\tcw sinopaty\filterscripts\Anti Cleo.pwn(72) : ïðåäóïðåæäåíèå 235: public-ôóíêöèÿ íóæäàåòñÿ â îïåðåæàþùåì îáúÿâëåíèè (èäåíòèôèêàòîð "LogCLEO")
+C:\Users\mr.17\Documents\tcw project\tcw sinopaty\filterscripts\Anti Cleo.pwn(80) : ïðåäóïðåæäåíèå 235: public-ôóíêöèÿ íóæäàåòñÿ â îïåðåæàþùåì îáúÿâëåíèè (èäåíòèôèêàòîð "KickPlayer")
+Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
+
+
+Ïðåäóïðåæäåíèé:2.
